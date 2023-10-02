@@ -5,7 +5,8 @@
   outline: none;
 }
 
-*:not(.slick-track), *:not(.slick-list) {
+*:not(.slick-track),
+*:not(.slick-list) {
   transition: 0.4s;
 }
 
@@ -19,14 +20,21 @@ body {
   color: #353535;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0;
   padding: 0;
   font-weight: 500;
   letter-spacing: 2px;
 }
 
-h1, h3, h4, h5 {
+h1,
+h3,
+h4,
+h5 {
   text-transform: uppercase;
 }
 
@@ -82,7 +90,8 @@ p {
   font-size: 0.95rem;
 }
 
-section, footer {
+section,
+footer {
   padding: 6rem 0;
   text-align: center;
 }
@@ -101,6 +110,7 @@ section, footer {
 .box {
   text-align: center;
 }
+
 /* end: global styles */
 
 /* start: hero section styles */
@@ -233,6 +243,7 @@ header nav ul li a {
 #hero-slider .slick-dots li.slick-active button:before {
   border-color: #fff;
 }
+
 /* end: hero section styles */
 
 /* start: features section styles */
@@ -240,7 +251,7 @@ header nav ul li a {
   width: 31%;
 }
 
-#features .box > img {
+#features .box>img {
   width: 100%;
 }
 
@@ -263,6 +274,7 @@ header nav ul li a {
 #features .box .icon img {
   vertical-align: middle;
 }
+
 /* end: features section styles */
 
 /* start: services section styles */
@@ -286,6 +298,7 @@ header nav ul li a {
 #services .box h4 {
   color: #fff;
 }
+
 /* end: services section styles */
 
 /* start: trainers section styles */
@@ -329,6 +342,7 @@ header nav ul li a {
 #trainers-slider .slick-next:before {
   font-size: 40px;
 }
+
 /* end: trainers section styles */
 
 /* start: schedule services styles */
@@ -336,7 +350,7 @@ header nav ul li a {
   text-align: left;
 }
 
-#schedule-services .flex > div {
+#schedule-services .flex>div {
   width: 32%;
   box-sizing: border-box;
 }
@@ -418,7 +432,68 @@ header nav ul li a {
 #schedule-services .personal-trainer-box strong {
   color: #fff;
 }
+
 /* end: schedule services styles */
+
+/* start: sign up section styles */
+#sign-up-section {
+  width: 100vw;
+}
+
+#sign-up-section h3 {
+  color: #212122;
+  margin-bottom: 0;
+}
+
+#sign-up-section p {
+  width: 90%;
+  max-width: 800px;
+  margin: 32px auto;
+}
+
+#sign-up-section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
+  gap: 24px;
+  margin: 0 auto;
+}
+
+#sign-up-section button {
+  width: fit-content;
+}
+
+#sign-up-section form>label {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+#sign-up-section form>label#phone-label>div {
+  width: 100%;
+  gap: 4px;
+  display: grid;
+  grid-template-columns: 64px 64px 1fr;
+}
+
+#sign-up-section input {
+  padding: 8px;
+  font-size: 1.2rem;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+#sign-up-section input:focus {
+  border: 2px solid #233EDE;
+}
+
+/* end: sign up section styles */
 
 /* start: footer section styles */
 footer {
@@ -500,6 +575,7 @@ footer small a {
   color: #fff;
   text-decoration: underline;
 }
+
 /* end: footer section styles */
 
 /* start: search and embed video overlay styles */
@@ -545,7 +621,7 @@ footer small a {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
-#search-container-hide, 
+#search-container-hide,
 #video-frame-hide {
   color: #fff;
   font-size: 1.75rem;
@@ -587,6 +663,7 @@ footer small a {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+
 /* end: search and embed video overlay styles */
 
 /* start: media queries */
@@ -665,7 +742,7 @@ footer small a {
       align-items: center;
       position: static;
     }
-    
+
     #header-logo-mobile {
       display: inline-block;
     }
@@ -717,12 +794,12 @@ footer small a {
       flex-wrap: wrap;
     }
 
-    #schedule-services .flex > div.upcoming-classes-box,
-    #schedule-services .flex > div.membership-cards-box {
+    #schedule-services .flex>div.upcoming-classes-box,
+    #schedule-services .flex>div.membership-cards-box {
       width: 48%;
     }
 
-    #schedule-services .flex > div.personal-trainer-box {
+    #schedule-services .flex>div.personal-trainer-box {
       width: 100%;
       margin-top: 3rem;
       background-size: cover;
@@ -742,12 +819,12 @@ footer small a {
       top: 30%;
     }
 
-    #schedule-services .flex > div {
+    #schedule-services .flex>div {
       width: 100% !important;
       margin-top: 3rem;
     }
 
-    #schedule-services .flex > div:first-child {
+    #schedule-services .flex>div:first-child {
       margin-top: 0;
     }
 
@@ -784,4 +861,5 @@ footer small a {
     }
   }
 }
+
 /* end: media queries */

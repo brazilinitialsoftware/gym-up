@@ -257,10 +257,40 @@
     </div>
   </section>
 
-  <section>
+  <section id="sign-up-section">
     <!-- Form of Sign Up -->
     <!-- Name, Email, Phone, Hour of Training and button for send -->
     <!-- The data will be sent to WhatsApp -->
+    <h3>Train with us</h3>
+    <p>Pellentesque dictum nisl in nibh dictum volutpat nec a quam. Vivamus suscipit nisl quis nulla pretium.Pellentesque dictum nisl in nibh dictum volutpat nec a quam. Vivamus suscipit nisl quis nulla pretium.</p>
+
+    <form id="sign-up-form">
+      <label>
+        Name
+        <input type="text" id="signup-name-input" required>
+      </label>
+
+      <label>
+        Email
+        <input type="email" id="signup-email-input"  required>
+      </label>
+
+      <label id="phone-label">
+        Phone
+        <div>
+          <input type="text" id="signup-phone-country-input" placeholder="+00"  required>
+          <input type="text" id="signup-phone-areacode-input" placeholder="(000)"  required>
+          <input type="text" id="signup-phone-local-input" placeholder="000-000"  required>
+        </div>
+      </label>
+
+      <label>
+        Hour of training
+        <input type="time" id="signup-hour-input">
+      </label>
+
+      <button type="submit">send</button>
+    </form>
   </section>
 
   <footer>
